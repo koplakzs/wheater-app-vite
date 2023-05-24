@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useState } from 'react'
 // import apiKey from './apiKey'
 
@@ -12,6 +13,8 @@ import './App.css'
 
 function App() {
 
+  let keys = process.env.MAILCHIMP_API_KEY;
+
   // html
   const imageStatus = document.getElementsByClassName('image-status')[0];
 
@@ -20,7 +23,6 @@ function App() {
   let [humidity, setHumidity] = useState(0);
   let [wind, setWind] = useState(0)
   let [description, setDescription] = useState('')
-  let apiKey = process.env.API_KEY;
   const changecity = (e) => {setCity(e.target.value)}
 
   const keyDown = (e) => {
@@ -41,7 +43,7 @@ function App() {
   const fetchData = async () => {
 
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${keys}`
     );
     const data = await response.json();
 
