@@ -13,7 +13,7 @@ import './App.css'
 
 function App() {
 
-  let keys = process.env.MAILCHIMP_API_KEY;
+  let keys = process.env.API_KEY;
 
   // html
   const imageStatus = document.getElementsByClassName('image-status')[0];
