@@ -1,0 +1,24 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #d5f9f9;
+}
+
+#root {
+  box-shadow: 3px 3px 10px #e0e0e0;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 20px;
+}

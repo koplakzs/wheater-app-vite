@@ -1,0 +1,59 @@
+.input {
+    padding: 20px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    background: url('./assets/location.png') no-repeat scroll 10px 10px;
+    background-size: 20px;
+    padding-left:40px;
+}
+.icon-search {
+    font-size: 25pt;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.icon-search:hover {
+    text-shadow: 1px 1px 1px #919191;
+}
+
+.input:focus {
+    outline: none;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.status {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.show h1 {
+    margin-bottom: 15px;
+}
+
+.main-status {
+    display: flex;
+    justify-content: space-between;
+}
+.main-status i {
+    font-size: 25pt;
+    margin-right: 10px;
+}
+.main-status p:nth-child(1) {
+    font-weight: bold;
+    font-size: 14pt;
+}
+.humidity, .wind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
