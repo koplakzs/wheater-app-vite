@@ -48,6 +48,7 @@ function App() {
       setTemp(0)
       setHumidity(0);
       setWind(0)
+      imageStatus.src = notFound
       return
     }
     switch(data.weather[0].main){
@@ -71,9 +72,7 @@ function App() {
         imageStatus.src =haze;
                     break;
 
-      default :
-      imageStatus.src = notFound
-      break
+      default : ""
     }
     setDescription(titleCase(data.weather[0].description))
     setTemp(data.main.temp)
