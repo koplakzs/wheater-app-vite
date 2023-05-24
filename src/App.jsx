@@ -11,7 +11,7 @@ import './App.css'
 
 function App() {
 
-  const keys = process.env.API_KEY;
+  const keys = import.meta.env.VITE_API_KEY;
 
   // html
   const imageStatus = document.getElementsByClassName('image-status')[0];
