@@ -11,7 +11,7 @@ import './App.css'
 
 function App() {
 
-  let keys = process.env.API_KEY;
+  const keys = process.env.API_KEY;
 
   // html
   const imageStatus = document.getElementsByClassName('image-status')[0];
