@@ -1,7 +1,5 @@
 /* eslint-disable no-undef */
 import { useState } from 'react'
-// import apiKey from './apiKey'
-
 import notFound from '../src/assets/not-found.png'
 import cloud from '../src/assets/cloud.png'
 import clear from '../src/assets/clear.png'
